@@ -1,0 +1,12 @@
+<form action='/' method='get'>
+  <input type='text' name='title'>
+  <button>Get Movie!</button>
+</form>
+
+<% if @search_results %>
+  <h1><%= @search_results['Title'] %></h1>
+  <img src=<%= @search_results['Poster'] %>/>
+  <h2>Director: <%= @search_results['Director'] %></h2>
+  <h3>Plot: <%= @search_results['Plot'] %></h3>
+  <h3>Year: <%= @search_results['Year'] %></h3>
+<% end %>
