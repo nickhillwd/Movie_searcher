@@ -35,5 +35,31 @@ get '/' do
 
   end
   erb :movie
+
 end
+
+get '/movies' do
+
+  @db = PG.connect(dbname: 'movie_app', host: 'localhost')
+
+  sql_get = "SELECT * FROM movies"
+
+  @movies_data = @db.exec(sql_get)
+
+  @db.close
+
+  erb :movies
+end
+
+
+
+
+
+
+
+
+
+
+
+
 
