@@ -18,7 +18,7 @@ ul {
 
 ul li {
   display:inline;
-  padding: 0 20px; 
+  margin: 0 20px; 
 }
 
 a {
@@ -27,9 +27,13 @@ a {
   font-family: Helvetica;
 }
 
-input.input_box {
+form {
   margin-left:auto;
   margin-right:auto;
+  text-align: center;
+}
+
+input.input_box {
   text-align: center;
 }
 
