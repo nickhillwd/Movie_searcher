@@ -1,8 +1,10 @@
 <h1>Movies</h1>
 
+<section>
 <% @movies_data.each do |movie| %>
 <h3><%= movie['title'] %></h3>
 <img src="<%= movie['poster'] %>">
 <p>Year: <%= movie['year'] %></p>
 <p><%= movie['plot'] %></p>
 <% end %>
+</section>

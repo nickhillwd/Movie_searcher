@@ -3,6 +3,7 @@
   <button>Get Movie!</button>
 </form>
 
+<section>
 <% if @search_results %>
   <h1><%= @search_results['Title'] %></h1>
   <img src=<%= @search_results['Poster'] %>/>
@@ -10,3 +11,4 @@
   <h3>Plot: <%= @search_results['Plot'] %></h3>
   <h3>Year: <%= @search_results['Year'] %></h3>
 <% end %>
+</section>
